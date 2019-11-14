@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Inser"
+    tools:context=".InsereDados">
+
+
+    <TextView
+        android:id="@+id/nome_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nome" />
+
+    <EditText
+        android:id="@+id/nome_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/sobrenome_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="Sobrenome" />
+
+    <EditText
+        android:id="@+id/sobrenome_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sobrenome_add"
+        />
+
+    <TextView
+        android:id="@+id/numero_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:text="Número: " />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero_edit"
+        android:layout_below="@+id/numero_add" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endereço:"
+        android:id="@+id/endereço_add"
+        android:layout_marginTop="220dp" />
+
+    <EditText
+        android:id="@+id/endereço_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endereço_add"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail:"
+        android:id="@+id/email_add"
+        android:layout_marginTop="290dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email_edit"
+        android:layout_below="@+id/email_add"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Referencia:"
+        android:id="@+id/referencia_add"
+        android:layout_marginTop="350dp" />
+
+    <EditText
+        android:id="@+id/referencia_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/referencia_add"
+        android:layout_marginTop="-2dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:id="@+id/button_cad"
+        android:layout_below="@+id/referencia_add"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_alignEnd="@+id/referencia_add" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

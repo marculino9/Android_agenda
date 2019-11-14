@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private RecyclerView lista;
     private Context mContext;
+    private Button button;
 
 
     @Override
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         lista = findViewById(R.id.Recycler);
+        Button botaoadd = findViewById(R.id.btnAdicionar);
 
         final ContatoMock mock = new ContatoMock(this);
 
@@ -45,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
             }
         };
 
+        botaoadd.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent it = new Intent(MainActivity.this, InsereDados.class);
+                startActivity(it);
+            }
+        });
 
 
         Contato_Adapter contato_Adapter = new Contato_Adapter(mContatos,onClickViewListener);
